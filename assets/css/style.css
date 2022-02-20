@@ -102,7 +102,7 @@ ul {
 
 .button-shape {
   width: 170px;
-  height: 49px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,6 +149,7 @@ ul {
 
 .button-shape.primary-button {
   color: #fff;
+  border-color: #008BD2 !important;
 }
 
 .button-shape.primary-button::after, .button-shape.primary-button::before {
@@ -1279,6 +1280,26 @@ ul {
   }
 }
 
+html[dir="ltr"] .contact-us .content .form-box .form-group img {
+  right: unset !important;
+  left: 15px;
+}
+
+html[dir="ltr"] .features .feature-image {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[dir="ltr"] header .image-content img {
+  -o-object-position: right !important;
+     object-position: right !important;
+}
+
+html[dir="ltr"] .progress-wrap {
+  left: unset !important;
+  right: 20px;
+}
+
 .navbar {
   width: 100%;
   padding: 30px 0px;
@@ -2032,10 +2053,6 @@ header .image-content img {
           justify-content: center;
 }
 
-.features .box .content .button-contain .button-shape {
-  color: #000 !important;
-}
-
 .features .box .content .button-contain .button-shape:first-child {
   -webkit-margin-end: 10px;
           margin-inline-end: 10px;
@@ -2243,6 +2260,21 @@ header .image-content img {
   font-weight: 700;
   line-height: 25px;
   margin: 0px;
+}
+
+.contact-us .content .box-contain {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-us .content .contact-box {
@@ -2570,8 +2602,8 @@ footer .content .copyrigts .socail li a img {
 
 footer .content .copyrigts .socail li a img:hover {
   opacity: 1;
-  -webkit-animation: bounce-in-fwd .5s linear;
-          animation: bounce-in-fwd .5s linear;
+  -webkit-animation: bounce-in-fwd 1s linear;
+          animation: bounce-in-fwd 1s linear;
 }
 
 .progress-wrap {
@@ -2645,7 +2677,7 @@ footer .content .copyrigts .socail li a img:hover {
   .navbar .hamburger {
     display: block !important;
   }
-  .navbar .button-contain {
+  .navbar .button-contain .button-shape {
     display: none !important;
   }
   .navbar .navbar-nav {
@@ -2678,7 +2710,15 @@ footer .content .copyrigts .socail li a img:hover {
     top: 90px !important;
   }
   header {
-    padding-bottom: 0px !important;
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+  }
+  header h4, header span {
+    font-size: 21px !important;
+    text-align: justify;
+  }
+  header p {
+    text-align: justify !important;
   }
   footer .footer-nav {
     -ms-flex-wrap: nowrap;
@@ -2730,11 +2770,29 @@ footer .content .copyrigts .socail li a img:hover {
   .about-us .box {
     padding: 20px 10px !important;
   }
+  .about-us .content h4 {
+    font-size: 22px !important;
+    text-align: justify !important;
+  }
   .products .box {
     margin-bottom: 35px !important;
   }
   .features .box .content {
     padding: 50px 10px;
+  }
+  .order-mobile-1 {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .order-mobile-0 {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+  .features .feature-content h4 {
+    font-size: 20px !important;
+    text-align: justify !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

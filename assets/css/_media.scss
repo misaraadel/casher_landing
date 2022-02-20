@@ -4,7 +4,7 @@
       display: block !important;
     }
 
-    .button-contain{
+    .button-contain .button-shape {
       display: none !important;
     }
 
@@ -38,7 +38,17 @@
   }
 
   header {
-    padding-bottom: 0px !important;
+    padding-top: 100px !important;
+    padding-bottom: 40px !important;
+
+    h4, span {
+      font-size: 21px !important;
+      text-align: justify;
+    }
+
+    p {
+      text-align: justify !important;
+    }
   }
 
   footer {
@@ -96,7 +106,15 @@
     .box {
       padding: 20px 10px !important;
     }
+
+    .content {
+      h4{
+        font-size: 22px !important;
+        text-align: justify !important;
+      }
+    }
   }
+  
 
   .products .box {
     margin-bottom: 35px !important;
@@ -104,5 +122,18 @@
 
   .features .box .content {
     padding: 50px 10px;
+  }
+
+  .order-mobile-1 {
+    order: 1 !important;
+  }
+
+  .order-mobile-0 {
+    order: 0 !important; 
+  }
+
+  .features .feature-content h4 {
+    font-size: 20px !important;
+    text-align: justify !important;
   }
 }

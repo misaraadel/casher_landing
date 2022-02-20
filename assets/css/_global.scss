@@ -94,7 +94,7 @@ ul{
 
 .button-shape {
     width: 170px;
-    height: 49px;
+    height: 50px;
     display: flex;
     align-items: center;
     align-content: center;
@@ -132,6 +132,7 @@ ul{
 
     &.primary-button {
         color: #fff;
+        border-color: #008BD2 !important;
 
         &::after, &::before {
             width: 55%;

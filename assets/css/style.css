@@ -2717,6 +2717,9 @@ footer .content .copyrigts .socail li a img:hover {
     font-size: 21px !important;
     text-align: justify;
   }
+  header span {
+    color: var(--primary) !important;
+  }
   header p {
     text-align: justify !important;
   }

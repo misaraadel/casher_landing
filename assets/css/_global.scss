@@ -28,7 +28,7 @@
     scroll-behavior: smooth;
 
     &::selection{
-        background-color: #368B85;
+        background-color: #008BD2;
         color: #fff; 
     }
     
@@ -41,12 +41,12 @@
     }
     
     &::-webkit-scrollbar-thumb {
-        background: #368B85; 
+        background: linear-gradient(180deg , #008BD2 , #00466A); 
         border-radius: 8px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: #FFD371; 
+        background: linear-gradient(180deg , #00466A , #008BD2); ; 
     }
 }
 

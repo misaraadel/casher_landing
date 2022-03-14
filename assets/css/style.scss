@@ -242,6 +242,54 @@ header {
     }
   }
 
+  .data-contain {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      color: #fff;
+      font-size: 35px;
+      font-weight: 900;
+      line-height: 45px;
+      margin: 0px;
+
+      span {
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 45px;
+        color: var(--primary);
+      }
+    }
+
+    .links-contain {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      margin-top: 25px;
+
+      li {
+        padding: 0px 10px;
+
+        &:first-child {
+          border-inline-end: 1px solid #fff;
+        }
+
+        a {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 500;
+        }
+
+        span {
+          color: #FECC00;
+          font-size: 15px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
   .image-content {
     width: 100%;
     height: 437px;
@@ -253,6 +301,263 @@ header {
       object-fit: contain;
       object-position: left;
       animation: translateY 1.4s linear infinite;
+    }
+  }
+}
+
+.bundels {
+  width: 100%;
+  padding: 90px 0px;
+
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 85px;
+
+    h4 {
+      color: #000;
+      font-size: 35px;
+      font-weight: 900;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #9D9D9D;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba($color: #008BD2, $alpha: 0.08);
+    transition: all .4s linear;
+
+    .title {
+      width: 100%;
+      padding: 25px 10px;
+      text-align: center;
+      background: linear-gradient(45deg, #008BD2, #00466A);
+      position: relative;
+      z-index: 9;
+    
+      &::after {
+        content: '';
+        position: absolute;
+        width: 70%;
+        height: 90%;
+        background: url('../images/header_pattern.svg') center / contain no-repeat;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+      
+
+      h4 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #FECC00;
+        font-size: 17px;
+        font-weight: 500;
+        margin: 0px;
+      }
+    }
+
+    .data {
+      width: 100%;
+      height: calc(100% - 113px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .content {
+      padding: 20px 10px;
+
+      li {
+        padding-inline-start: 20px;
+        margin-bottom: 15px;
+        color: #000;
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        z-index: 9;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background:linear-gradient(45deg, #008BD2, #00466A);
+          border-radius: 2px;
+          transform: rotate(45deg);
+          right: 0px;
+          top: calc(50% - 7.5px);
+          z-index: -1;
+        }
+
+        &:last-child {
+          margin: 0px;
+        }
+      }
+    }
+
+    .button-contain {
+      padding-bottom: 20px;
+
+      .button-shape {
+        margin: auto;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.questions {
+  width: 100%;
+  padding: 0px 0px 90px 0px;
+
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 85px;
+
+    h4 {
+      color: #000;
+      font-size: 35px;
+      font-weight: 900;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #9D9D9D;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+
+  .card, .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin-bottom: 20px;
+
+  }
+
+  .card {
+
+    .btn-link{
+      width: 100%;
+      height: 60px;
+      font-weight: 500;
+      text-align: right;
+      text-decoration: none;
+      position: relative;
+      color: #008BD2;
+      background-color: #f8f8f8;
+      font-size: 15px;
+
+      &::after {
+        content: '\f107';
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        text-align: center;
+        left: 15px;
+        top: 11px;
+        background: linear-gradient(45deg, #008BD2, #00466A);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 700;
+        font-size: 15px; 
+        color: #fff;
+      }
+
+      &::before{
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        background-color: #f7f7f7;
+        z-index: 1;
+        transform: rotate(45deg);
+        right: 35px;
+        top: 46px;
+        border-radius: 4px;
+      }
+       
+      &.collapsed {
+        &::after {
+          content: '\f106';
+        }
+      }
+    }
+
+    .card-body {
+      background: linear-gradient(45deg, #008BD2, #00466A);
+
+      p{
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 2rem;
+        text-align: justify;
+      }
+
+      ul {
+        padding: 10px 10px;
+
+        li {
+          padding-inline-start: 20px;
+          margin-bottom: 15px;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 700;
+          position: relative;
+          z-index: 9;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background:linear-gradient(45deg, #008BD2, #00466A);
+            border-radius: 2px;
+            transform: rotate(45deg);
+            right: 0px;
+            top: calc(50% - 7.5px);
+            z-index: -1;
+          }
+
+          &:last-child {
+            margin: 0px;
+          }
+        }
+      }
     }
   }
 }

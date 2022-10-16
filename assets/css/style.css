@@ -2261,8 +2261,8 @@ footer .content .footer-nav {
   margin: 45px 0px;
 }
 footer .content .footer-nav .nav-item {
-  -webkit-margin-end: 30px;
-          margin-inline-end: 30px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
 footer .content .footer-nav .nav-item:last-child {
   margin: 0px !important;

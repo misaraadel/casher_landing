@@ -1114,16 +1114,16 @@ html[dir=ltr] .progress-wrap {
   flex-direction: row;
 }
 .navbar .content .navbar-nav .nav-item {
-  -webkit-margin-end: 30px;
-          margin-inline-end: 30px;
+  -webkit-margin-end: 16px;
+          margin-inline-end: 16px;
 }
 .navbar .content .navbar-nav .nav-item:last-child {
   margin: 0px !important;
 }
 .navbar .content .navbar-nav .nav-item .nav-link {
   color: #fff;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 19px;
 }
 .navbar .content .navbar-nav .nav-item .nav-link:hover, .navbar .content .navbar-nav .nav-item .nav-link.active {
@@ -1656,6 +1656,21 @@ header .image-content img {
   font-weight: 700;
   line-height: 25px;
 }
+.why-casher .casher-img {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+.why-casher .casher-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+  -webkit-animation: translateY 1.4s linear infinite;
+          animation: translateY 1.4s linear infinite;
+}
 .why-casher .box {
   width: 100%;
   display: flex;
@@ -1751,7 +1766,7 @@ header .image-content img {
 }
 .products .box {
   width: 100%;
-  padding: 40px 42px;
+  padding: 40px 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   position: relative;
@@ -1984,6 +1999,14 @@ header .image-content img {
 }
 .take-now .content {
   text-align: center;
+}
+.take-now .content img {
+  width: 200px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+  margin-bottom: 40px;
 }
 .take-now .content h4 {
   color: #fff;

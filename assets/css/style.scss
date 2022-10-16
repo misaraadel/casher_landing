@@ -93,7 +93,7 @@ html[dir="ltr"] {
       flex-direction: row;
 
       .nav-item {
-        margin-inline-end: 30px;
+        margin-inline-end: 16px;
 
         &:last-child{
           margin: 0px !important;
@@ -101,8 +101,8 @@ html[dir="ltr"] {
 
         .nav-link {
           color: #fff;
-          font-size: 16px;
-          font-weight: 700;
+          font-size: 15px;
+          font-weight: 500;
           line-height: 19px;
 
           &:hover, &.active{
@@ -709,6 +709,20 @@ header {
     }
   }
 
+  .casher-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+      animation: translateY 1.4s linear infinite;
+    }
+  }
+
   .box {
     width: 100%;
     display: flex;
@@ -814,7 +828,7 @@ header {
 
   .box {
     width: 100%;
-    padding: 40px 42px;
+    padding: 40px 10px;
     background-color: rgba($color: #fff, $alpha: 0.10);
     border-radius: 10px;
     position: relative;
@@ -1080,6 +1094,14 @@ header {
 
   .content {
     text-align: center;
+
+    img {
+      width: 200px;
+      height: 60px;
+      object-fit: contain;
+      margin: auto;
+      margin-bottom: 40px;
+    }
     
     h4 {
       color: #fff;

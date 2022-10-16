@@ -884,11 +884,55 @@ header {
   padding: 100px 0px;
   background-color: #fff;
 
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 85px;
+
+    h4 {
+      color: #000;
+      font-size: 35px;
+      font-weight: 900;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #9D9D9D;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+
   .box {
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
     transition: all .4s linear;
+
+    &.small-box {
+      height: 100%;
+      img {
+        height: 240px;
+      }
+
+      .content {
+        padding: 20px 10px;
+      }
+
+      h4 {
+        margin-bottom: 25px !important;
+        font-size: 20px !important;
+      }
+
+      p {
+        color: #808080;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+    } 
 
     &.yellow-bk {
       border: 1px solid rgba($color: #FECC00, $alpha: 0.10);

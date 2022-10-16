@@ -2435,7 +2435,6 @@ footer .content .copyrigts .socail li a img:hover {
   }
   header h4, header span {
     font-size: 21px !important;
-    text-align: justify;
   }
   header span {
     color: var(--primary) !important;
@@ -2491,8 +2490,19 @@ footer .content .copyrigts .socail li a img:hover {
   .products .box {
     margin-bottom: 35px !important;
   }
+  .why-casher,
+.features {
+    padding: 20px 0px;
+  }
   .features .box .content {
     padding: 50px 10px;
+  }
+  .why-casher .casher-img {
+    height: 200px;
+  }
+  .why-casher .casher-img img {
+    -o-object-position: center;
+       object-position: center;
   }
   .order-mobile-1 {
     order: 1 !important;

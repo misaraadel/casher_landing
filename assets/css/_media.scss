@@ -39,11 +39,11 @@
   }
 
   header {
-    padding-top: 100px !important;
+    padding-top: 130px !important;
     padding-bottom: 40px !important;
 
     h4, span {
-      font-size: 21px !important;
+      font-size: 20px !important;
     }
 
     span {
@@ -51,7 +51,12 @@
     }
 
     p {
+      margin: 15px 0px !important;
       text-align: justify !important;
+    }
+
+    .image-content {
+      height: 300px;
     }
   }
 

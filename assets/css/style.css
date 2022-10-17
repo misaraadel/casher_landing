@@ -98,7 +98,7 @@ ul {
   position: relative;
   z-index: 9;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   border: 1px solid transparent;
@@ -2430,17 +2430,21 @@ footer .content .copyrigts .socail li a img:hover {
     top: 90px !important;
   }
   header {
-    padding-top: 100px !important;
+    padding-top: 130px !important;
     padding-bottom: 40px !important;
   }
   header h4, header span {
-    font-size: 21px !important;
+    font-size: 20px !important;
   }
   header span {
     color: var(--primary) !important;
   }
   header p {
+    margin: 15px 0px !important;
     text-align: justify !important;
+  }
+  header .image-content {
+    height: 300px;
   }
   footer .footer-nav {
     flex-wrap: nowrap;

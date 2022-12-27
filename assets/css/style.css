@@ -1271,10 +1271,12 @@ header .data-contain .links-contain {
 }
 header .data-contain .links-contain li {
   padding: 0px 10px;
-}
-header .data-contain .links-contain li:first-child {
   -webkit-border-end: 1px solid #fff;
           border-inline-end: 1px solid #fff;
+}
+header .data-contain .links-contain li:last-child {
+  -webkit-border-end: 0px !important;
+          border-inline-end: 0px !important;
 }
 header .data-contain .links-contain li a {
   color: #fff;
@@ -2414,6 +2416,239 @@ footer .content .copyrigts .socail li a img:hover {
   transform: translateY(0);
 }
 
+.blogs {
+  width: 100%;
+  padding: 80px 0px;
+  background-color: #fff;
+  position: relative;
+  z-index: 9;
+}
+.blogs .blog-box {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+.blogs .blog-box .image-content {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.blogs .blog-box .image-content .date, .blogs .blog-box .image-content .type {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 20px;
+  z-index: 9;
+  padding: 3px 10px !important;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
+}
+.blogs .blog-box .image-content .date {
+  background-color: var(--primary);
+  left: 10px !important;
+}
+.blogs .blog-box .image-content .type {
+  right: 10px;
+  background-color: var(--secondary);
+}
+.blogs .blog-box .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .blog-box .contain {
+  width: 100%;
+  padding: 15px 10px;
+  text-align: center;
+}
+.blogs .blog-box .contain h1 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #000;
+  margin: 0px;
+}
+.blogs .blog-box .contain p {
+  color: #808080;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+.blogs .blog-box .contain .button-contain {
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+.blogs .blog-box .contain .button-contain .button-shape {
+  margin: 0px auto;
+}
+.blogs .blog-box:hover {
+  transform: translateY(-10px);
+}
+.blogs .blog-box:hover h1 {
+  color: var(--primary);
+}
+
+.signle-blog {
+  width: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+.signle-blog .image-content {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 99;
+  margin-top: -80px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.signle-blog .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.signle-blog .title-contain {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #008BD2;
+  text-align: center;
+  border-radius: 40px;
+  margin: 50px 0px 80px;
+}
+.signle-blog .title-contain h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.signle-blog .title-contain .data {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.signle-blog .title-contain .data img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  filter: invert(100%) sepia(3%) saturate(7500%) hue-rotate(153deg) brightness(107%) contrast(102%);
+}
+.signle-blog .title-contain .data span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.signle-blog .title-contain .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.signle-blog .title-contain .tags li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  margin-bottom: 10px;
+}
+.signle-blog .title-contain .tags li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.signle-blog .title-contain .tags li a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: var(--secondary);
+  font-size: 15px;
+  font-weight: 500;
+}
+.signle-blog .data-contain {
+  width: 100%;
+  padding: 80px;
+  border: 1px solid rgba(0, 139, 210, 0.1);
+  border-radius: 50px;
+}
+.signle-blog .data-contain p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 24px;
+}
+.signle-blog .data-contain p:last-child {
+  margin-bottom: 0px !important;
+}
+.signle-blog .share-section {
+  width: 100%;
+  padding: 30px 10px;
+  background-color: #fff;
+  border: 1px solid var(--secondary);
+  box-shadow: 0px 0px 10px rgba(0, 139, 210, 0.06);
+  border-radius: 20px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.signle-blog .share-section p {
+  color: #008BD2;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  margin-bottom: 0px !important;
+}
+.signle-blog .share-section .socail-media {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.signle-blog .share-section .socail-media li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.signle-blog .share-section .socail-media a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+.signle-blog .share-section .socail-media a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.signle-blog .share-section .socail-media a:hover::after {
+  opacity: 1;
+}
+.signle-blog .share-section .socail-media a:hover img {
+  -webkit-animation: tada 0.4s linear both;
+          animation: tada 0.4s linear both;
+}
+
 @media (max-width: 999px) {
   .navbar .hamburger {
     display: block !important;
@@ -2532,5 +2767,27 @@ footer .content .copyrigts .socail li a img:hover {
   .features .feature-content h4 {
     font-size: 20px !important;
     text-align: justify !important;
+  }
+  .signle-blog {
+    padding-bottom: 40px;
+  }
+  .signle-blog .image-content {
+    border-radius: 20px;
+    height: 250px !important;
+  }
+  .signle-blog .title-contain {
+    margin: 30px 0px;
+    padding: 20px 15px;
+    border-radius: 10px !important;
+  }
+  .signle-blog .title-contain h1 {
+    font-size: 18px !important;
+  }
+  .signle-blog .data-contain {
+    border-radius: 10px !important;
+    padding: 25px 20px !important;
+  }
+  .signle-blog .data-contain p {
+    margin-bottom: 20px !important;
   }
 }/*# sourceMappingURL=style.css.map */

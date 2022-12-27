@@ -158,4 +158,32 @@
     font-size: 20px !important;
     text-align: justify !important;
   }
+
+  .signle-blog {
+    padding-bottom: 40px;
+
+    .image-content {
+      border-radius: 20px;
+      height: 250px !important;
+    }
+
+    .title-contain {
+      margin: 30px 0px;
+      padding: 20px 15px;
+      border-radius: 10px !important;
+
+      h1 {
+        font-size: 18px !important;
+      }
+    }
+
+    .data-contain {
+      border-radius: 10px !important;
+      padding: 25px 20px !important;
+
+      p {
+        margin-bottom: 20px !important;
+      }
+    }
+  }
 }
